@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para el amor de mi vida:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser… todo en ti me hace sentir en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `Para mi niña hermosa:\n\n Que más puedo decir me encanta todo de ti tu voz, tu forma de ser, tu sonrisa simplemente todo de ti me encantas mi niña.\n\nGracias por acompañarme en mis dias, por quitarme todas las dudas e inseguirdades que tenia y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar,Feliz cumpleaños mi niña hermosa.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, Zero";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con mucho amor y admiracion. Fernandito\n";
   signature.classList.add('visible');
 }
 
